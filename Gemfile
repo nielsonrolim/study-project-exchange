@@ -65,3 +65,4 @@ gem 'rspec-rails', '~> 3.5'
 
 gem 'rest-client'
 gem 'webmock'
+gem 'awesome_print'

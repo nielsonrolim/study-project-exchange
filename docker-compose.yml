@@ -18,6 +18,8 @@ services:
     volumes:
       - .:/onebitexchange
       - gems:/gems
+    environment:
+      - EDITOR=vim
 
 
 volumes:
