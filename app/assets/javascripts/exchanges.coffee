@@ -1,6 +1,6 @@
 $(document).ready ->
-
   $('#exchange_form').submit ->
+    $('#loader').show()
     if $('form').attr('action') == '/convert'
       $.ajax '/convert',
           type: 'GET'
@@ -14,4 +14,5 @@ $(document).ready ->
             alert textStatus
           success: (data, text, jqXHR) ->
             $('#result').val(data.value)
+            $('#loader').hide()
         return false;

@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body {
-  background: image-url("/background-img.jpg") no-repeat center center fixed;
+  background: image-url("/images/Wallpapers_from_w-dog.net_1920x1080.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -24,8 +24,12 @@ body {
   }
 
   .subtitle{
+    font-family: Impact, Charcoal, sans-serif;
+    letter-spacing: 3px;
     color: white;
-    text-shadow: 3px 0px 3px #000000;
+    text-shadow: 2px 0px 2px #000000;
+    font-weight: bold;
+    -webkit-text-stroke: 1px black;
     font-size: 30px;
     margin-left: 10px;
     margin-right: 10px;
@@ -39,4 +43,33 @@ body {
     margin: 0 auto;
     padding-bottom: 10px;
   }
+}
+
+/* Center the loader */
+#loader {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid goldenrod;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
