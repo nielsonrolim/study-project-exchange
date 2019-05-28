@@ -38,4 +38,5 @@ $(document).ready ->
     $("#source_currency").val(target_currency)
     $("#target_currency").val(source_currency)
     $('#exchange_form').submit() if $('#amount').val()
+    return false;
 

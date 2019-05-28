@@ -50,12 +50,13 @@ RSpec.configure do |config|
     }', headers: {})
 
 
+
     stub_request(:get, "https://rest.coinapi.io/v1/assets").
     with(
      headers: {
       'Accept'=>'application/json',
       'Accept-Encoding'=>'deflate, gzip',
-      'X-Coinapi-Key'=>'F37A945E-A7AF-47CF-A36B-F7AA27D09FC9'
+      'X-Coinapi-Key'=>Rails.application.credentials[Rails.env.to_sym][:coin_api_key]
     }).
     to_return(status: 200, body: '
       [
