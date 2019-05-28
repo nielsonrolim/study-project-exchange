@@ -9,4 +9,10 @@ describe 'Cryto Currency Exchange by CoinAPI' do
     expect(res.is_a? Numeric).to eql(true)
     expect(res != 0 || amount == 0).to eql(true)
   end
+
+  it 'includes BTC as an asset' do
+    assets = CoinApiService.assets
+    expect(assets.is_a? Array).to eql(true)
+    expect(assets).to include({"BTC" => "Bitcoin"})
+  end
 end

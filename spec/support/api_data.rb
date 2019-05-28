@@ -31,5 +31,26 @@ RSpec.configure do |config|
         "rate": 3260.3514321215056208129867667
       }', headers: {})
 
+       stub_request(:get, "https://rest.coinapi.io/v1/assets").
+         with(
+           headers: {
+          'Accept'=>'application/json',
+          'Accept-Encoding'=>'deflate, gzip',
+          'X-Coinapi-Key'=>'F37A945E-A7AF-47CF-A36B-F7AA27D09FC9'
+           }).
+         to_return(status: 200, body: '
+          [
+            {
+              "asset_id": "BTC",
+              "name": "Bitcoin",
+              "type_is_crypto": 1
+            },
+            {
+              "asset_id": "USD",
+              "name": "US Dollar",
+              "type_is_crypto": 0
+            }
+          ]', headers: {})
+
   end
 end
