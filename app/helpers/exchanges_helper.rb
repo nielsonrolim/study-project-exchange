@@ -8,4 +8,8 @@ module ExchangesHelper
       'THB', 'TRY', 'USD', 'ZAR'
     ]
   end
+
+  def crypto_currenty_list
+    CoinApiService.assets
+  end
 end
