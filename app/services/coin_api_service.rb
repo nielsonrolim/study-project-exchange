@@ -17,7 +17,7 @@ class CoinApiService
 
       exchange_rate[:rate] * @amount
     rescue StandardError => e
-      e.response
+      e
     end
   end
 
