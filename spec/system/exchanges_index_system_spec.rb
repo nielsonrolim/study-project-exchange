@@ -1,7 +1,7 @@
 require 'rails_helper'
 
-RSpec.describe "Exchange Currency Process", :type => :system, js: true do
-  it "shows exchanged value" do
+feature "Exchange Currency Process Page", :type => :system, js: true do
+  scenario "shows exchanged value" do
     visit '/'
     within("#exchange_form") do
       select('BTC - Bitcoin', from: 'source_currency')
