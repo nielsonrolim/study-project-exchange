@@ -1,0 +1,60 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://rest.coinapi.io/v1/exchangerate/BTC/USD
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Coinapi-Key:
+      - CE92E1A2-B2E4-4AD1-9537-F3BB7FF14C9A
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - deflate, gzip
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 16 Jun 2019 20:20:20 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d9ce3ff888d93234b873a7e87ac4eaa891560716375; expires=Mon, 15-Jun-20
+        20:19:35 GMT; path=/; domain=.coinapi.io; HttpOnly
+      Vary:
+      - Accept-Encoding
+      Request-Context:
+      - appId=cid-v1:9006a036-a027-444b-9b12-21861d70ec00
+      X-Ratelimit-Limit:
+      - '100'
+      X-Ratelimit-Remaining:
+      - '99'
+      X-Ratelimit-Reset:
+      - '2019-06-17T20:19:54.6630639Z'
+      X-Ratelimit-Request-Cost:
+      - '1'
+      Strict-Transport-Security:
+      - max-age=0
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4e7f7ac38b4d4c0a-GRU
+    body:
+      encoding: ASCII-8BIT
+      string: "{\r\n  \"time\": \"2019-06-16T20:18:23.5130954Z\",\r\n  \"asset_id_base\":
+        \"BTC\",\r\n  \"asset_id_quote\": \"USD\",\r\n  \"rate\": 8844.348502183371753437798643\r\n}"
+    http_version: 
+  recorded_at: Sun, 16 Jun 2019 20:20:20 GMT
+recorded_with: VCR 5.0.0
