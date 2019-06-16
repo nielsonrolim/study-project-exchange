@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-feature "Exchange Currency Process Page", :type => :system, js: true do
+feature "Exchange Currency Process Page", :vcr, :type => :system, js: true do
   scenario "shows exchanged value" do
     visit '/'
     within("#exchange_form") do

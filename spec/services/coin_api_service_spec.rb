@@ -2,7 +2,7 @@ require 'spec_helper'
 require 'json'
 require './app/services/coin_api_service'
 
-describe 'Cryto Currency Exchange by CoinAPI' do
+describe 'Cryto Currency Exchange by CoinAPI', :vcr do
   it 'exchanges USD to BTC' do
     amount = rand(0..9999)
     res = CoinApiService.new("BTC", "USD", amount).perform
