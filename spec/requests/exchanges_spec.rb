@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe "Exchanges", type: :request do
+RSpec.describe "Exchanges", type: :request, :vcr do
 
   describe 'GET #index' do
     it 'returns http success' do
