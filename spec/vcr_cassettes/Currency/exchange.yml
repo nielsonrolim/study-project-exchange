@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://currencydatafeed.com/api/data.php?currency=USD/BRL&token=5baeqe0fncuxdcr1gezd
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (linux-gnu x86_64) ruby/2.5.5p157
+      Host:
+      - currencydatafeed.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 16 Jun 2019 20:19:34 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=db03501eede15bd6b112858f144d670531560716374; expires=Mon, 15-Jun-20
+        20:19:34 GMT; path=/; domain=.currencydatafeed.com; HttpOnly
+      Access-Control-Allow-Origin:
+      - ''
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE, OPTIONS
+      Access-Control-Max-Age:
+      - '1000'
+      Access-Control-Allow-Headers:
+      - Content-Type, Authorization, X-Requested-With
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4e7f7abb385dc88f-MIA
+      Content-Encoding:
+      - gzip
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA6pWKi5JLCktVrIqKSpN1VFKLi0qSs1LrlSyiq5G4iiFBrvE6DsF+SjpKJUl5pSmKlkpGetZWJobKekopSSWgPhGBoaWugZmuoZmCkZGViYWVqaWSjpKJZUFIMn8osz0zLzEHKXa2FoAAAAA//8DACjgJM50AAAA
+    http_version: 
+  recorded_at: Sun, 16 Jun 2019 20:19:35 GMT
+recorded_with: VCR 5.0.0

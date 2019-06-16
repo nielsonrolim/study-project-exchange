@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://rest.coinapi.io/v1/exchangerate/USD/BRL
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Coinapi-Key:
+      - CE92E1A2-B2E4-4AD1-9537-F3BB7FF14C9A
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - deflate, gzip
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 16 Jun 2019 20:19:32 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d08f30eec987e1870925613328071380b1560716362; expires=Mon, 15-Jun-20
+        20:19:22 GMT; path=/; domain=.coinapi.io; HttpOnly
+      Vary:
+      - Accept-Encoding
+      Request-Context:
+      - appId=cid-v1:9006a036-a027-444b-9b12-21861d70ec00
+      X-Ratelimit-Limit:
+      - '100'
+      X-Ratelimit-Remaining:
+      - '99'
+      X-Ratelimit-Reset:
+      - '2019-06-17T20:19:24.9941148Z'
+      X-Ratelimit-Request-Cost:
+      - '1'
+      Strict-Transport-Security:
+      - max-age=0
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4e7f7a6fb8c7d00c-GRU
+    body:
+      encoding: ASCII-8BIT
+      string: "{\r\n  \"time\": \"2019-06-16T20:18:46.1032597Z\",\r\n  \"asset_id_base\":
+        \"USD\",\r\n  \"asset_id_quote\": \"BRL\",\r\n  \"rate\": 3.9217789561299418071600970525,\r\n
+        \ \"intermediaries_in_the_path\": [\r\n    \"ETH\"\r\n  ]\r\n}"
+    http_version: 
+  recorded_at: Sun, 16 Jun 2019 20:19:32 GMT
+recorded_with: VCR 5.0.0
